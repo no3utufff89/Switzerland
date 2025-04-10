@@ -1,0 +1,20 @@
+@import 'var';
+@import 'fonts';
+@import 'normalize';
+@include normalize();
+@import 'default';
+@import 'blocks/controls';
+@import 'blocks/common';
+
+@import 'blocks/nav';
+@import 'blocks/header';
+
+@import 'blocks/welcome';
+@import 'blocks/divider';
+@import 'blocks/about';
+@import 'blocks/rooms-review';
+@import 'blocks/offer-block';
+
+@import 'blocks/presentation';
+@import 'blocks/request';
+@import 'blocks/map-section';
