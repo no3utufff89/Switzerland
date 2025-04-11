@@ -3,6 +3,7 @@
 @import 'normalize';
 @include normalize();
 @import 'default';
+@import 'swiper';
 @import 'blocks/controls';
 @import 'blocks/common';
 
@@ -13,6 +14,9 @@
 @import 'blocks/divider';
 @import 'blocks/about';
 @import 'blocks/rooms-review';
+@import 'blocks/video';
+@import 'blocks/advantages';
+
 @import 'blocks/offer-block';
 
 @import 'blocks/presentation';

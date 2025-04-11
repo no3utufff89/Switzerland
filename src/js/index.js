@@ -1,3 +1,4 @@
+import './modules/slider.js';
 export const burgerBtn = document.querySelector('.burger-menu');
 
 burgerBtn.addEventListener('click', () => {

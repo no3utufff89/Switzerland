@@ -63,6 +63,7 @@ const path = {
             'src/assets/icons/**/*.*',
             'src/assets/video/**/*.*',
             'src/assets/public/**/*.*',
+            'src/assets/libs/**/*.*',
         ],
     },
     watch: {
@@ -173,11 +174,24 @@ const webpackConf = {
         filename: 'index.js',
     },
     module: {
-        rules: [],
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    { loader: 'style-loader' },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                        },
+                    },
+                ],
+            },
+        ],
     },
 };
 
-if (!dev) {
+if (dev) {
     webpackConf.module.rules.push({
         test: /\.(js)$/,
         exclude: /(node_modules)/,
